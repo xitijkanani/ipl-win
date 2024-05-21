@@ -125,9 +125,9 @@ batting_team = st.selectbox('Select the batting team',sorted(teams))
 bowling_team = st.selectbox('Select the bowling team',sorted(teams))
 selected_city = st.selectbox('Select host city',sorted(cities))
 target = st.number_input('Target')
-score = st.number_input('Score')
+score = st.number_input('Current Score')
 overs = st.number_input('Overs completed')
-wickets = st.number_input('Wickets out')
+wickets = st.number_input('Wickets Taken')
 
 if st.button('Predict Probability'):
     runs_left = target - score
